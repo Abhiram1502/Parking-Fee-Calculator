@@ -108,4 +108,8 @@ input{
     #result2{
         font-size: 15px;
     }
+    .btn:hover{
+        transform: scale(1.02);
+        border-radius: 6px;
+    }
 }
