@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Fee Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="ParkingMan">
+        <div class="inputs">
+            <h2>Parking Fee Calculator</h2>
+            <div class="vl"></div>
+            <div class="start-inputs">
+                <label for="start-date">Start Date & Time : </label>
+                <input type="datetime-local" id="start-date">
+            </div>
+            <p>To</p>
+            <div class="end-inputs">
+                <label for="end-date">End Date & Time &nbsp;: </label>
+                <input type="datetime-local" id="end-date">
+            </div>
+        </div>
+        <div id="buttons">
+            <button onclick="chargeCal()" class="btn" type="button" title="Calculate">Calculate</button>
+            <button class="btn" onclick="setCurrent()" title="Calculate up to now">Calculate up to Now</button>
+        </div>
+        <p id="result1">Total number of hours used parking : <span title="Parking Duration" id="hours">0</span> hours</p>
+        <h3 id="result2">Parking Charge : ₹ <span id="fee" title="Parking Charges">0.00</span></h3>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
